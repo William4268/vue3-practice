@@ -1,24 +1,25 @@
 <script setup>
-import { ref, reactive, watch } from "vue";
+import { ref, watch } from "vue";
 
-const text = ref("");
-const dynamicStyle = reactive({
-  color: "red",
-  fontSize: "14px",
-});
+const x = ref(0);
+const y = ref(0);
 
-watch(text, (data) => {
-  console.log(data);
-  if (data.length % 2 === 0) {
-    dynamicStyle.color = "black";
-    dynamicStyle.fontSize = "20px";
-  } else {
-    dynamicStyle.color = "red";
-    dynamicStyle.fontSize = "14px";
-  }
+// watch(x, (newX) => {
+//   console.log(`x is ${newX}`);
+// });
+
+// watch(
+//   () => x.value + y.value,
+//   (sum) => {
+//     console.log(`sum of x = y is + ${sum}`);
+//   }
+// );
+
+watch([x, () => y.value], ([newX, newY]) => {
+  console.log(`x is ${newX} and y is ${newY}`);
 });
 </script>
 
 <template>
-  <input type="text" :style="dynamicStyle" v-model="text" />
+  <input type="text" v-model="x" />
 </template>
