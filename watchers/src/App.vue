@@ -1,20 +1,24 @@
 <script setup>
-import { ref, watch } from "vue";
-const text = ref({
-  levels: {
-    text: "",
-  },
+import { ref, reactive, watch } from "vue";
+
+const text = ref("");
+const dynamicStyle = reactive({
+  color: "red",
+  fontSize: "14px",
 });
 
-watch(
-  () => text.value.levels.text,
-  (newData, oddData) => {
-    console.log(newData, oddData);
-  },
-  { deep: true }
-);
+watch(text, (data) => {
+  console.log(data);
+  if (data.length % 2 === 0) {
+    dynamicStyle.color = "black";
+    dynamicStyle.fontSize = "20px";
+  } else {
+    dynamicStyle.color = "red";
+    dynamicStyle.fontSize = "14px";
+  }
+});
 </script>
 
 <template>
-  <input type="text" v-model="text.levels.text" />
+  <input type="text" :style="dynamicStyle" v-model="text" />
 </template>
