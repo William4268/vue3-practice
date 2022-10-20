@@ -1,10 +1,12 @@
 <script setup>
 import apple1 from "./components/apple1.vue";
+import apple2 from "./components/apple2.vue";
 </script>
 
 <template>
   <main>
-    <apple1></apple1>
+    <!-- <apple1></apple1> -->
+    <apple2></apple2>
   </main>
 </template>
 
