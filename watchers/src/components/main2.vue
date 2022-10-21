@@ -26,7 +26,7 @@ const noWude = () => {
 const GG = watch(myHP, (currHP, prevHP) => {
   console.log(currHP, prevHP);
   if (currHP < 5) {
-    msg.value = "血量只剩一半";
+    msg.value = "血量不到一半";
   }
   if (prevHP - currHP > 2) {
     msg.value = "被重重的打了一拳了";
