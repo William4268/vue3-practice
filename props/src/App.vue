@@ -20,7 +20,7 @@ import TheWelcome from "./components/TheWelcome.vue";
 
   <main>
     <TheWelcome />
-    <helloVic />
+    <helloVic msg="我在測試" />
   </main>
 </template>
 
