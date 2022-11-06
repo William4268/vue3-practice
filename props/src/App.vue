@@ -1,6 +1,11 @@
 <script setup>
 import HelloWorld from "./components/HelloWorld.vue";
 import TheWelcome from "./components/TheWelcome.vue";
+import Add from "./components/Add.vue";
+
+const callBack = (res) => {
+  console.log("callBack=>", res);
+};
 </script>
 
 <template>
@@ -21,6 +26,7 @@ import TheWelcome from "./components/TheWelcome.vue";
   <main>
     <TheWelcome />
     <helloVic msg="我在測試" />
+    <add @AddInt="callBack" />
   </main>
 </template>
 
