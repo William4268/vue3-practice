@@ -1,6 +1,10 @@
-import { createApp } from 'vue'
-import App from './App.vue'
+import { createApp } from "vue";
+import App from "./App.vue";
+import HelloVic from "./components/HelloVic.vue";
 
-import './assets/main.css'
+import "./assets/main.css";
 
-createApp(App).mount('#app')
+const app = createApp(App);
+app.component("HelloVic", HelloVic);
+
+app.mount("#app");
