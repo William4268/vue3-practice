@@ -5,8 +5,15 @@ import { RouterLink, RouterView } from "vue-router";
 <template>
   <h1>emit的練習</h1>
   <nav>
-    <RouterLink to="/">觸發與事件監聽 範例01</RouterLink>
-    <RouterLink to="/about">事件參數 範例02</RouterLink>
+    <RouterLink to="/">回到原點</RouterLink>
+    <RouterLink to="/about">觸發與事件監聽 範例01</RouterLink>
+    <RouterLink to="/about">觸發與事件監聽 範例01</RouterLink>
+    <RouterLink to="/about">觸發與事件監聽 範例01</RouterLink>
+    <RouterLink to="/about">觸發與事件監聽 範例01</RouterLink>
+    <RouterLink to="/about">觸發與事件監聽 範例01</RouterLink>
+    <RouterLink to="/about">觸發與事件監聽 範例01</RouterLink>
+    <RouterLink to="/about">觸發與事件監聽 範例01</RouterLink>
+    <RouterLink to="/about">觸發與事件監聽 範例01</RouterLink>
     <RouterView />
   </nav>
 </template>
