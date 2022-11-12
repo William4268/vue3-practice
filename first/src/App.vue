@@ -1,20 +1,15 @@
-<script>
+<script setup>
 import { ref } from "vue";
+import HelloWorldVue from "./components/HelloWorld.vue";
 
-export default {
-  setup() {
-    const apple = ref(0);
+const apple = ref(0);
 
-    const book = () => {
-      apple.value += 1;
-    };
-
-    return { apple, book };
-  },
+const book = () => {
+  apple.value += 1;
 };
 </script>
 <template>
-  <h1>vue : {{ apple }}</h1>
+  <h1>vue : {{ apple }}<HelloWorldVue /></h1>
 
   <button @click="book">拿著，照我 :{{ apple }}</button>
 </template>
