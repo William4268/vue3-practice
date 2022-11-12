@@ -7,13 +7,8 @@ import { RouterLink, RouterView } from "vue-router";
   <nav>
     <RouterLink to="/">回到原點</RouterLink>
     <RouterLink to="/about">觸發與事件監聽 範例01</RouterLink>
-    <RouterLink to="/about">觸發與事件監聽 範例01</RouterLink>
-    <RouterLink to="/about">觸發與事件監聽 範例01</RouterLink>
-    <RouterLink to="/about">觸發與事件監聽 範例01</RouterLink>
-    <RouterLink to="/about">觸發與事件監聽 範例01</RouterLink>
-    <RouterLink to="/about">觸發與事件監聽 範例01</RouterLink>
-    <RouterLink to="/about">觸發與事件監聽 範例01</RouterLink>
-    <RouterLink to="/about">觸發與事件監聽 範例01</RouterLink>
+    <RouterLink to="/t2">事件參數 範例02</RouterLink>
+
     <RouterView />
   </nav>
 </template>
