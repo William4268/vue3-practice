@@ -6,9 +6,9 @@ import { RouterLink, RouterView } from "vue-router";
   <h1>emit的練習</h1>
   <div class="a">
     <RouterLink to="/">回到原點</RouterLink>
-    <RouterLink to="/about">觸發與事件監聽 範例01</RouterLink>
-    <RouterLink to="/t2">事件參數 範例02</RouterLink>
-    <RouterLink to="/t3">聲明觸發的事件 範例03</RouterLink>
+    <RouterLink to="/about">觸發與事件監聽 試做01</RouterLink>
+    <RouterLink to="/t2">事件參數 試做02</RouterLink>
+    <RouterLink to="/t3">聲明觸發的事件 試做03</RouterLink>
   </div>
   <div>
     <RouterView />
