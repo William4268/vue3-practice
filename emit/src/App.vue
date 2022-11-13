@@ -4,13 +4,15 @@ import { RouterLink, RouterView } from "vue-router";
 
 <template>
   <h1>emit的練習</h1>
-  <nav>
+  <div class="a">
     <RouterLink to="/">回到原點</RouterLink>
     <RouterLink to="/about">觸發與事件監聽 範例01</RouterLink>
     <RouterLink to="/t2">事件參數 範例02</RouterLink>
-
+    <RouterLink to="/t3">聲明觸發的事件 範例03</RouterLink>
+  </div>
+  <div>
     <RouterView />
-  </nav>
+  </div>
 </template>
 
 <style scope>
@@ -18,11 +20,10 @@ h1 {
   font-size: 50px;
 }
 
-nav {
-  font-size: 50px;
-  height: 5px;
+.a {
+  font-size: 30px;
+
   display: flex;
   gap: 50px;
-  flex-wrap: wrap;
 }
 </style>
