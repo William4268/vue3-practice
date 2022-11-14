@@ -9,5 +9,5 @@ const click = () => {
 </script>
 
 <template>
-  <Three :msg="msg" @change="click()" />
+  <Three :msg="msg" @change="click" />
 </template>

@@ -12,6 +12,6 @@ const apple = () => {
 <template>
   <h1>下面是一個按鈕，按它。 目前的值：{{ see }}</h1>
 
-  <button @click="apple">按我會增加一</button>
-  <add @book="apple" />
+  <button v-on:click="apple">按我會增加一</button>
+  <add v-on:book="apple" />
 </template>

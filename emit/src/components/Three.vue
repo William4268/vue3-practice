@@ -16,6 +16,6 @@ const check = () => {
   <h1>{{ msg }}</h1>
 
   <div>
-    <button type="button" @click="check()">現在已經按到 {{ count }}</button>
+    <button type="button" @click="check">現在已經按到 {{ count }}</button>
   </div>
 </template>

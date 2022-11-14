@@ -10,6 +10,6 @@ const twoWork = (n) => {
 </script>
 
 <template>
-  目前數值：{{ now }}
+  <h1>目前數值：{{ now }}</h1>
   <Two @two="twoWork" />
 </template>
