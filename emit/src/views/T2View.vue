@@ -4,8 +4,8 @@ import Two from "../components/Two.vue";
 
 const now = ref(0);
 
-const twoWork = (n) => {
-  now.value += n;
+const twoWork = (n, m) => {
+  now.value += n + m;
 };
 </script>
 
