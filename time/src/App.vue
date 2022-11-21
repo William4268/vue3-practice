@@ -35,7 +35,7 @@ const input2 = reactive({
 });
 
 const filterData = computed(() => {
-  if (input.主辦單位 === "主辦單位" || input2.質詢時間 === "質詢時間") {
+  if (input.主辦單位 === "主辦單位" && input2.質詢時間 === "質詢時間") {
     return data;
   } else {
     return data.filter((item) => {
@@ -48,6 +48,21 @@ const filterData = computed(() => {
 });
 </script>
 <template>
+  <select
+    data-v-1ac660be=""
+    data-v-670a9dc4=""
+    class="base_select custom-select"
+    data-v-5c945d6a=""
+    id="__BVID__39"
+  >
+    <option data-v-1ac660be="" value="">陳情來源／區域</option>
+    <option value="霧峰">霧峰</option>
+    <option value="沙鹿">沙鹿</option>
+    <option value="大肚">大肚</option>
+    <option value="烏日">烏日</option>
+    <option value="龍井">龍井</option>
+    <option disabled="disabled" value="其他">其他</option>
+  </select>
   <div class="main-proposal">
     <select v-model="input.主辦單位">
       <option value="主辦單位" disabled>主辦單位</option>
